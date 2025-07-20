@@ -1,0 +1,136 @@
+       
+        .flex-container{
+            display: flex;
+            height: 87.5vh;
+            justify-content: space-evenly;
+            align-items: center;
+            border-radius: 30px;
+            box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px;
+            margin: 40px 15px 20px 15px;
+            background-color: #ffffff;
+            
+        }
+
+        .flex-box{
+            width: 490px;
+            height: 480px;
+            background-color: white;
+            border-radius: 15px;
+            text-align: center;
+            overflow: hidden;
+
+        }
+
+        .flex-box .input span{
+            margin-right: 10px;
+            font-size: 18px;
+        }
+
+        .flex-box h1{
+            font-size: 3rem;
+        }
+
+        .background-clip{
+            font-size: 7rem;
+            background-image: url(image/carbon-footprint3.jpg);
+            background-size: 100% 100%;
+            -webkit-background-clip: text;
+            color: transparent;
+            text-align: center;
+            
+        }
+        input{
+            margin: 0;
+            padding: 0;
+        }
+        
+    
+        .flex-box .input{
+            color: black;
+            background-color: #ffffff;
+            font-weight: bold;
+            font-size: 14px;
+            border: 0px;
+            border-radius: 40px;
+            padding: 14px 0px;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            width: 350px;
+            margin: auto;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            text-align: center;
+            
+        }
+
+        .flex-box .input input{
+            border: 0px;
+            padding: 4px 0px;
+        }
+
+        .flex-box .input input:focus{
+            border: 0px;
+            border-bottom: #A4BC92 solid 1.5px;
+            -webkit-transition: 0.5s;
+            transition: 0.5s;
+            outline:none;
+        }
+
+        .flex-box .input input::placeholder{
+            text-align: center;
+        }
+        
+        .flex-box  .button{
+            padding: 20px;
+
+        }
+        .flex-box .button input{
+            padding: 10px;
+            border-radius: 15px;
+        }
+
+        .flex-box .box{
+            padding-top: 10px;
+        }
+
+        .flex-box .button input {
+            padding: 0.7em 1.4em 0.7em 1.1em;
+            font-size: 16px;
+            color: white;
+            background: #ad5389;
+            background: linear-gradient(0deg, rgba(20,167,62,1) 0%, rgba(102,247,113,1) 100%);
+            border: none;
+            box-shadow: 0 0.7em 1.5em -0.5em #14a73e98;
+            letter-spacing: 0.05em;
+            border-radius: 20em;
+            cursor: pointer;
+            user-select: none;
+            -webkit-user-select: none;
+            touch-action: manipulation;
+        }
+
+
+        .flex-box .sign-up{
+            margin-top: 30px;
+        }
+
+        .flex-box .sign-up a{
+            text-decoration: none;
+        }
+
+        .flex-box .button input:hover {
+            box-shadow: 0 0.5em 1.5em -0.5em #14a73e98;
+        }
+
+        .flex-box .button input:active {
+            box-shadow: 0 0.3em 1em -0.5em #14a73e98;
+        }
+
+        body{
+            background-color: #DDFFBB;
+            background-color: #C7E9B0;
+            /* background-color: #B3C99C;
+            background-color: #A4BC92; */
+    
+        }
+
+   

@@ -1,0 +1,141 @@
+.flex-container{
+    display: flex;
+    height: 87.5vh;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 30px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px;
+    margin: 40px 15px 20px 15px;
+    background-color: #ffffff;
+}
+
+.flex-box{
+    width: auto;
+    height: 480px;
+    background-color: white;
+    padding: 0px 20px;
+    /* border-radius: 30px; */
+    text-align: center;
+    overflow: hidden;
+
+
+}
+.flex-box h1{
+    font-size: 3rem;
+}
+
+.background-clip{
+    font-size: 7rem;
+    background-image: url(image/carbon-footprint3.jpg);
+    background-size: 100% 100%;
+    -webkit-background-clip: text;
+    color: transparent;
+    text-align: center;
+
+    }
+input{
+    margin: 0;
+    padding: 0;
+}
+
+.flex-box .input{
+    color: black;
+    background-color: #ffffff;
+    font-weight: bold;
+    font-size: 14px;
+    border: 0px;
+    border-radius: 40px;
+    padding: 14px 0px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    width: 350px;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+
+}
+
+.flex-box .input input{
+    border: 0px;
+    padding: 4px 0px;
+}
+
+
+.flex-box .button input {
+    padding: 0.7em 1.4em 0.7em 1.1em;
+    font-size: 16px;
+    color: white;
+    background: #ad5389;
+    background: linear-gradient(0deg, rgba(20,167,62,1) 0%, rgba(102,247,113,1) 100%);
+    border: none;
+    box-shadow: 0 0.7em 1.5em -0.5em #14a73e98;
+    letter-spacing: 0.05em;
+    border-radius: 20em;
+    cursor: pointer;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+
+.flex-box .sign-up{
+    margin-top: 30px;
+}
+
+.flex-box .sign-up a{
+    text-decoration: none;
+}
+
+.flex-box .button input:hover {
+            box-shadow: 0 0.5em 1.5em -0.5em #14a73e98;
+}
+
+.flex-box .button input:active {
+            box-shadow: 0 0.3em 1em -0.5em #14a73e98;
+}
+
+body{
+            background-color: #DDFFBB;
+            background-color: #C7E9B0;
+            /* background-color: #B3C99C;
+            background-color: #A4BC92; */
+
+}
+table{
+    //box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 15px;
+    padding: 40px;
+    font-size: 1.2rem;
+}
+table th{
+    text-align: center;
+    padding: 20px 30px 20px 30px;
+    //border-radius: 15px;
+    //box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+table td{
+    text-align: center;
+    padding: 20px 30px 20px 30px;
+}
+
+tr:nth-child(1){
+    width: 250px;
+    margin: auto;
+    background-color: #004225;
+    border-radius: 15px;
+    border-radius: 40px;
+    padding: 5px 0px;
+    margin: 30px 0px;
+    margin-bottom: 30px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px;
+    background: linear-gradient(#DDFFBB,#C7E9B0,#B3C99C,#A4BC92);
+            }
+
+th:nth-child(1){
+    border-radius: 40px 0px 0px 40px;
+}
+
+th:nth-child(6){
+     border-radius: 0px 40px 40px 0px;
+}

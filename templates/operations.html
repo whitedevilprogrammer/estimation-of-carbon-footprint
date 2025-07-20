@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>View Details</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'view-style.css' %}">
+</head>
+<body>
+     <div class="flex-container">
+
+         <div class="flex-box">
+            <h1 class="background-clip">View Details</h1>
+                <table>
+                    <tr>
+                        <th>Name</th>
+                        <th>Address</th>
+                        <th>Username</th>
+                        <th>Password</th>
+                        <th>Status</th>
+                        <th>Action</th>
+                    </tr>
+                    {% for i in value %}
+                    <tr>
+                        <td>{{i.Name}}</td>
+                        <td>{{i.Address}}</td>
+                        <td>{{i.Username}}</td>
+                        <td>{{i.Password}}</td>
+                        <td>{{i.Status}}</td>
+                        <td>
+                            <a href="/edit/{{i.id}}">Edit</a>
+                            <a href="/delete/{{i.id}}">Delete</a>
+                        </td>
+                    </tr>
+                    {% endfor %}
+            </table>
+        </div>
+
+        <div class="flex-box margin-right">
+
+            <h1 class="background-clip">Update Details</h1>
+                <form method="post">
+                    {% csrf_token %}
+                    <div class="box">
+                        <div class="input">
+                            <span>Name </span>
+                             <input type="text" name="name" placeholder="{{user_data.Name}}"  disabled= "disabled" >
+                        </div>
+
+                        <div class="input">
+                            <span>Address</span>
+                            <input type="text" name="address" placeholder="Address" value="{{user_data.Address}}">
+                        </div>
+
+
+                        <div class="input">
+                            <span>User Name</span>
+                            <input type="text" name="username" placeholder="{{user_data.Username}}"  disabled= "disabled" >
+                        </div>
+
+
+                        <div class="input">
+                            <span>Password</span>
+                            <input type="password" name="password" placeholder="Password" value="{{user_data.Password}}">
+                        </div>
+
+                        <div class="input">
+                            <span>Status</span>
+                            <input type="text" name="status" placeholder="{{user_data.Status}}"  disabled= "disabled" >
+                        </div>
+
+                        <div class="button">
+                            <input type="submit" value="Save Changes">
+                        </div>
+                    </div>
+                </form>
+
+            </div>
+
+     </div>
+
+
+
+<!--     <div class="flex-container">-->
+<!--        <div class="flex-box">-->
+<!--            {% if user_data %}-->
+<!--            <h3 class="background-clip">Update Details</h3>-->
+<!--            <form method="post">-->
+<!--                {% csrf_token %}-->
+<!--                <div class="box">-->
+<!--                        <div class="input">-->
+<!--                            <span>Name </span>-->
+<!--                            <p>{{user_data.Name}}</p>-->
+<!--                        </div>-->
+
+<!--                        <div class="input">-->
+<!--                            <span>Address</span>-->
+<!--                            <input type="text" name="address" placeholder="Address" value="{{user_data.Address}}">-->
+<!--                        </div>-->
+
+
+<!--                        <div class="input">-->
+<!--                            <span>User Name</span>-->
+<!--                            <p>{{user_data.Username}}</p>-->
+<!--                        </div>-->
+
+
+<!--                        <div class="input">-->
+<!--                            <span>Password</span>-->
+<!--                            <input type="password" name="password" placeholder="Password" value="{{user_data.Password}}">-->
+<!--                        </div>-->
+
+<!--                        <div class="input">-->
+<!--                            <span>Status</span>-->
+<!--                            <p>{{user_data.Status}}</p>-->
+<!--                        </div>-->
+
+<!--                        <div class="button">-->
+<!--                            <input type="submit" value="Save Changes">-->
+<!--                        </div>-->
+<!--                </div>-->
+<!--            </form>-->
+<!--            {% endif %}-->
+<!--        </div>-->
+<!--     </div>-->
+</body>
+</html>

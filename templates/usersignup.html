@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Sign-Up</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'usersignup.css' %}">
+</head>
+<body>
+<!-- <body > style="background-color:  #B0D9B1;" -->
+    <div class="flex-container">
+        <img src="{% static 'image/carbon-footprint2.jpg' %}">
+        <div class="flex-box">
+            <h1 class="background-clip">Sign-Up</h1>
+            <form method="post">
+                {% csrf_token %} 
+                <div class="box">
+                    <div class="input">
+                        <span>Name </span>
+                        <input type="text" name="name" placeholder="Name">
+                    </div>
+
+                    <div class="input">
+                        <span>Address</span>
+                        <input type="text" name="address" placeholder="Address">
+                    </div>
+
+                    
+                    <div class="input">
+                        <span>User Name</span>
+                        <input type="text" name="username" placeholder="User Name">
+                    </div>
+
+                    
+                    <div class="input">
+                        <span>Password</span>
+                        <input type="password" name="password" placeholder="Password">
+                    </div>
+
+                    <div class="button">
+                        <input type="submit" value="Sign-Up">
+                    </div>
+
+                    <div class="login">
+                        <a href="../userlogin">Login</a>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
